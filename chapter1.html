@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitolo 1 – Cos’è un programma e un algoritmo</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="chapter-page">
+  <header>
+    <h1>Hello World</h1>
+    <p class="subtitle">Impara le basi della programmazione da zero</p>
+  </header>
+
+  <main class="chapter-page">
+    <section id="chapter1">
+        <h1>Capitolo 1 – Cos’è un programma e un algoritmo</h1>
+        <div id="typewriter" data-text="
+La programmazione è il processo attraverso cui si scrivono istruzioni che un computer può eseguire.
+Queste istruzioni sono raccolte in un programma.
+      
+Un algoritmo invece è una sequenza finita di passi logici necessari per risolvere un problema o svolgere un compito.
+Il programma è la realizzazione pratica dell'algoritmo tramite un linguaggio di programmazione.      
+
+💡 Esempio quotidiano: preparare il caffè è un algoritmo. Segui dei passi: riempi la moka, accendi il fuoco, attendi, versa il caffè.
+Lo stesso vale per un algoritmo informatico!
+
+
+🎮 Mini game
+Prepara il caffè
+"></div>
+      <div id="coffe-game" class="hidden" >
+        <div id="left-panel"></div>
+        <div id="right-panel">
+            <div id="animation-layer">
+              <img id="macchinetta" src="media/image/coffe-game/machinettaoff.png" 
+              style="position: absolute; left: 35%; top: 45%; width: 100px;">
+            </div>
+            <div id="kitchen-wall">
+                <div id="btn">
+                    <button id="start-btn">Invia</button>
+                </div>
+            </div>
+            <div id="kitchen-surface"></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Popup errore -->
+    <div id="popup-error" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">❌ <strong>Oops!</strong> Hai sbagliato sequenza.</p>
+        <button id="retry-btn" class="popup-btn">Riprova</button>
+      </div>
+    </div>
+
+    <!-- Popup successo -->
+    <div id="popup-success" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">🎉 <strong>Bravo!</strong> Sequenza corretta.</p>
+        <button id="next-btn" class="popup-btn">Avanti</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – L'amichevole programmatore di quartiere</p>
+  </footer>
+  <script src="./js/chapter1.js"></script>
+</body>
+</html>

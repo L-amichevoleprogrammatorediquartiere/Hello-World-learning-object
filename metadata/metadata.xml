@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+  <general>
+    <identifier>
+      <catalog>GitHub</catalog>
+      <entry>hello-world-learning-object</entry>
+    </identifier>
+    <title>
+      <string language="it">Hello World – Basi di Programmazione</string>
+    </title>
+    <language>it</language>
+    <description>
+      <string language="it">
+        Learning object introduttivo alle basi della programmazione in JavaScript, con stile retrò anni ’80 e interazione tramite mini-giochi.
+      </string>
+    </description>
+    <keyword>
+      <string language="it">programmazione</string>
+      <string language="it">variabili</string>
+      <string language="it">strutture di controllo</string>
+      <string language="it">JavaScript</string>
+      <string language="it">learning object</string>
+    </keyword>
+    <coverage>
+      <string language="it">Introduzione alla programmazione</string>
+    </coverage>
+    <structure>hierarchical</structure>
+    <aggregationLevel>2</aggregationLevel>
+  </general>
+  <lifecycle>
+    <version>1.0</version>
+    <status>draft</status> draft (bozza), final (finale), revised, unavailable
+    <contribute>
+      <role>
+        <source>LOMv1.0</source>
+        <value>author</value>
+      </role>
+      <entity>
+        <![CDATA[L-amichevoleprogrammatorediquartiere]]>
+      </entity>
+      <date>
+        <dateTime>2025-06-28T00:00:00</dateTime>
+        <description>Data di creazione</description>
+      </date>
+    </contribute>
+  </lifecycle>
+  <educational>
+    <interactivityType>active</interactivityType>
+    <learningResourceType>exercise</learningResourceType>
+    <interactivityLevel>medium</interactivityLevel>
+    <semanticDensity>medium</semanticDensity>
+    <intendedEndUserRole>learner</intendedEndUserRole>
+    <context>higher education</context>
+    <typicalAgeRange>18-30</typicalAgeRange>
+    <difficulty>medium</difficulty>
+    <typicalLearningTime>
+      <duration>PT2H</duration>
+    </typicalLearningTime>
+    <description>
+      <string language="it">Percorso autoistruito per apprendere le basi della programmazione, senza tutor, tramite esercizi interattivi e dark mode.</string>
+    </description>
+  </educational>
+</lom>

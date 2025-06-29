@@ -1,0 +1,209 @@
+body {
+  background-color: #0f0f0f;
+  color: #00ffcc;
+  font-family: 'Press Start 2P', monospace;
+  padding: 1rem;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+body.chapter-page header h1 {
+  font-size: 1.5rem; /* più piccolo rispetto alla home */
+}
+
+body.chapter-page .subtitle {
+  font-size: 0.8rem;
+}
+
+
+.subtitle {
+  font-size: 0.8rem;
+  color: #ffaa00;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+main.chapter-page div{
+  color: #ffffff;
+}
+
+button {
+  font-family: 'Press Start 2P', monospace;
+  background-color: #ffaa00;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 40%;
+}
+
+button:hover {
+  background-color: #ffcc00;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.6rem;
+  color: #555;
+}
+
+#coin-animation {
+  font-size: 3rem;
+  position: fixed;
+  left: 50%;
+  top: -100px;
+  transform: translateX(-50%);
+  transition: top 0.5s ease-in;
+  z-index: 1000;
+}
+
+#coin-animation.drop {
+  top: 50%;
+}
+
+#typewriter {
+  white-space: pre-wrap;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+#coffe-game {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#coffe-game.hidden {
+  display: none;
+}
+
+#coffe-game #left-panel {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 260px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#coffe-game #right-panel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+#coffe-game #animation-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* le animazioni non bloccano il click sul bottone */
+  z-index: 10;
+}
+
+#coffe-game #kitchen-wall {
+  flex: 2;
+  background-color: #FFF3B0; /* giallo muro di cucina */
+  border: 1px solid #e0e0e0;
+  border-top-right-radius: 10px;
+}
+
+#coffe-game #kitchen-surface {
+  flex: 1;
+  background-color: #D2B48C; /* legno chiaro */
+  border-top: 3px solid #a57c50;
+  border-bottom-right-radius: 10px;
+}
+
+#coffe-game #btn {
+    margin-left: 48%;
+    margin-top: -2%;
+}
+
+.instruction-item {
+    margin-left: 0%;
+    height: 20px;
+    background-color: #444444;
+    border: 3px solid #999999; 
+    border-radius: 6px;
+    padding: 8px;
+    color: #eee;
+    cursor: grab;
+    user-select: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.85); /* più scuro, per contrasto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Press Start 2P', monospace;
+  user-select: none;
+}
+
+.popup-content {
+  background-color: #1a1a1a; /* stesso colore del main */
+  border: 2px solid #00ffcc; /* bordo neon azzurro */
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px #00ffcc;
+  max-width: 320px;
+  width: 90%;
+  color: #00ffcc;
+}
+
+.popup-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 5px #ffaa00; /* leggero bagliore arancione */
+}
+
+.popup-btn {
+  font-family: 'Press Start 2P', monospace;
+  background-color: #ffaa00; /* giallo/arancione come i bottoni */
+  color: #000;
+  padding: 0.8rem 2rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffaa00;
+  transition: background-color 0.3s ease;
+}
+
+.popup-btn:hover {
+  background-color: #ffcc00;
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.hidden {
+  display: none;
+}

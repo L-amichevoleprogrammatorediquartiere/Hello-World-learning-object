@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World – Basi di Programmazione</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Hello World</h1>
+    <p class="subtitle">Impara le basi della programmazione da zero</p>
+  </header>
+
+  <main>
+    <section id="intro">
+        <h2>Benvenuto programmatore!</h2>
+        <div id="typewriter" data-text="
+Hai appena messo piede nel tuo primo viaggio nel mondo della programmazione.
+Questo percorso ti guiderà passo dopo passo attraverso i concetti fondamentali: algoritmi, variabili, condizioni e cicli.
+
+Per ogni argomento, troverai una mini-lezione e un gioco interattivo retrò.
+
+🔒 Attenzione: puoi proseguire solo se superi ogni gioco!
+
+🎯 Obiettivo: arrivare al livello finale con le conoscenze base per scrivere il tuo primo programma.
+
+💡 Nessun tutor. Solo tu e il codice.
+" style="color:white"></div>
+        <button id="start-btn">Inizia!</button>
+        <div id="coin-animation" class="hidden">🪙</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – L'amichevole programmatore di quartiere</p>
+  </footer>
+
+  <audio id="coin-sound" preload="auto">
+    <source src="./media/audio/coin.flac" type="audio/flac" />
+  </audio>
+
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
