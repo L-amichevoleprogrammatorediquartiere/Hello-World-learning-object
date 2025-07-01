@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitolo 5 – Riepilogo</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="chapter-page">
+  <header>
+    <h1>Hello World</h1>
+    <p class="subtitle">Impara le basi della programmazione da zero</p>
+  </header>
+
+  <main class="chapter-page">
+    <section id="chapter1">
+        <h1>Capitolo 5 – Riepilogo</h1>
+        <div id="typewriter" data-text="
+Complimenti, sei arrivato alla fine del nostro primo viaggio nel mondo della programmazione! Prima di passare al quiz finale, rivediamo insieme tutti gli elementi fondamentali che hai imparato. 🎓
+
+
+
+📌 Variabili
+
+
+Le variabili servono per salvare valori da usare nel programma.
+In JavaScript, puoi dichiararle così:
+
+
+let nome = &quot;Luca&quot;;
+const eta = 20;
+var attivo = true;
+
+
+&#10148; let → per valori che possono cambiare
+&#10148; const → per valori che non devono cambiare
+&#10148; var → vecchio metodo, meglio evitarlo in nuovi progetti
+
+Tipi principali:
+
+&#10148; Numero: let x = 42;
+&#10148; Stringa: let nome = &quot;Anna&quot;;
+&#10148; Booleano: let acceso = false;
+
+
+
+
+🧭 Condizioni (if, else)
+
+
+Le condizioni servono a decidere cosa fare, in base a certe situazioni.
+
+Sintassi base:
+
+if (condizione) {
+  // codice se è vera
+} else if (altraCondizione) {
+  // altro codice
+} else {
+  // codice se nessuna condizione è vera
+}
+
+Operatori di confronto:
+
+&#10148; == uguale
+&#10148; != diverso
+&#10148; < minore
+&#10148; > maggiore
+&#10148; <=, >=
+&#10148; && (e logico), || (o logico)
+
+Esempio:
+
+let età = 18;
+if (età >= 18) {
+  console.log(&quot;Puoi entrare.&quot;);
+} else {
+  console.log(&quot;Accesso negato.&quot;);
+}
+
+
+
+🔁 Cicli (for, while)
+
+
+I cicli servono per ripetere delle azioni.
+
+🔄 Ciclo for
+
+
+Perfetto quando sai quante volte devi ripetere:
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+
+🔁 Ciclo while
+
+Utile quando non sai in anticipo quante volte:
+
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+👉 Attento al criterio di uscita: se manca, il ciclo continua per sempre!
+
+
+
+🎯 Ora tocca a te!
+
+Hai imparato a:
+
+&#10148; Creare variabili
+&#10148; Usare condizioni logiche
+&#10148; Ripetere azioni con cicli for e while
+
+Nel gioco finale metterai alla prova la tua capacità di leggere il codice e prevedere cosa succede. Non devi scrivere codice, ma capire cosa fa un programma completo.
+
+
+🎮 Mini game
+Cosa fa questo programma?
+"></div>
+      <div id="last-game" style="display:none" >
+        <div style="position:absolute; top:0%; left:0%; width:100%; height:1.7%; 
+        border: 2px solid gray; border-top-right-radius: 10px; border-top-left-radius: 10px; background-color: #1c1c1c;">
+            <p style="font-size: 11px; margin-left: 20px; margin-top: 12px;">JavaScript</p>
+            <div id="code" style="font-size: 12px; position:absolute; top: 60px; left: 38px;">
+                let punteggio = 0;<br><br>
+                let nome = &quot;Luca&quot;;<br><br>
+                <br><br>
+                for (let i = 1; i <= 5; i++) {<br><br>
+                &emsp;&emsp;&emsp;if (i % 2 === 0) {<br><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;punteggio += 2;<br><br>
+                &emsp;&emsp;&emsp;} else {<br><br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;punteggio += 1;<br><br>
+                &emsp;&emsp;&emsp;}<br><br>
+                }<br><br>
+                <br><br>
+                if (punteggio >= 7) {<br><br>
+                &emsp;&emsp;&emsp;console.log(nome+&quot;ha vinto con&quot;+punteggio+&quot;punti!&quot;);<br><br>
+                } else {<br><br>
+                &emsp;&emsp;&emsp;console.log(nome+&quot;ha perso con&quot;+punteggio+&quot;punti.&quot;);<br><br>
+                }<br><br>
+            </div>
+            <div style=" width: 8%; height: 480px; top:59px; left:0px; position:absolute; color: lightpink">
+                <p style="font-size: 14px; margin-top:0px">1</p>
+                <p style="font-size: 14px;">2</p>
+                <p style="font-size: 14px;">3</p>
+                <p style="font-size: 14px;">4</p>
+                <p style="font-size: 14px;">5</p>
+                <p style="font-size: 14px;">6</p>
+                <p style="font-size: 14px;">7</p>
+                <p style="font-size: 14px;">8</p>
+                <p style="font-size: 14px;">9</p>
+                <p style="font-size: 14px;">10</p>
+                <p style="font-size: 14px;">11</p>
+                <p style="font-size: 14px;">12</p>
+                <p style="font-size: 14px;">13</p>
+                <p style="font-size: 14px;">14</p>
+                <p style="font-size: 14px;">15</p>
+                <p style="font-size: 14px;">16</p>
+            </div>
+            <div style="position:absolute; top: 580px;">
+                <div class="quiz-question">
+                    <p>1) Che tipo di dato è la variabile nome?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q1" value="a">
+                        Numero
+                        </label>
+                        <label>
+                        <input type="radio" name="q1" value="b">
+                        Stringa
+                        </label>
+                        <label>
+                        <input type="radio" name="q1" value="c">
+                        Booleano
+                        </label>
+                        <label>
+                        <input type="radio" name="q1" value="d">
+                        Oggetto
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>2) Quante volte viene eseguito il ciclo for?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q2" value="a">
+                        4
+                        </label>
+                        <label>
+                        <input type="radio" name="q2" value="b">
+                        5
+                        </label>
+                        <label>
+                        <input type="radio" name="q2" value="c">
+                        6
+                        </label>
+                        <label>
+                        <input type="radio" name="q2" value="d">
+                        Fino a quando punteggio >=7
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>3) Cosa fa i % 2 === 0 nella condizione?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q3" value="a">
+                        Controlla se i è maggiore di 2
+                        </label>
+                        <label>
+                        <input type="radio" name="q3" value="b">
+                        Controlla se i è pari
+                        </label>
+                        <label>
+                        <input type="radio" name="q3" value="c">
+                        Controlla se i è diverso da 2
+                        </label>
+                        <label>
+                        <input type="radio" name="q3" value="d">
+                        Controlla se i è uguale a 0
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>4) Cosa succede se i è dispari?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q4" value="a">
+                        Aggiunge 2 punti
+                        </label>
+                        <label>
+                        <input type="radio" name="q4" value="b">
+                        Aggiunge 0 punti
+                        </label>
+                        <label>
+                        <input type="radio" name="q4" value="c">
+                        Aggiunge 1 punto
+                        </label>
+                        <label>
+                        <input type="radio" name="q4" value="d">
+                        Il ciclo si ferma
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>5) Qual'è il valore finale di punteggio alla fine dle ciclo?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q5" value="a">
+                        5
+                        </label>
+                        <label>
+                        <input type="radio" name="q5" value="b">
+                        6
+                        </label>
+                        <label>
+                        <input type="radio" name="q5" value="c">
+                        7
+                        </label>
+                        <label>
+                        <input type="radio" name="q5" value="d">
+                        10
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>6) Quante volte viene eseguita la riga punteggio += 2;?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q6" value="a">
+                        5
+                        </label>
+                        <label>
+                        <input type="radio" name="q6" value="b">
+                        2
+                        </label>
+                        <label>
+                        <input type="radio" name="q6" value="c">
+                        3
+                        </label>
+                        <label>
+                        <input type="radio" name="q6" value="d">
+                        Mai
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>7) Quale condizione decide il messaggio finale?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q7" value="a">
+                        Se i === 5
+                        </label>
+                        <label>
+                        <input type="radio" name="q7" value="b">
+                        Se nome è "Luca"
+                        </label>
+                        <label>
+                        <input type="radio" name="q7" value="c">
+                        Se punteggio >= 7
+                        </label>
+                        <label>
+                        <input type="radio" name="q7" value="d">
+                        Se punteggio === 5
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>8) Cosa stampa il programma alla fine?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q8" value="a">
+                        "Luca ha vinto con 7 punti"
+                        </label>
+                        <label>
+                        <input type="radio" name="q8" value="b">
+                        "Luca ha perso con 6 punti."
+                        </label>
+                        <label>
+                        <input type="radio" name="q8" value="c">
+                        "Errore nel programma"
+                        </label>
+                        <label>
+                        <input type="radio" name="q8" value="d">
+                        Niente
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>9) Se cambiassimo il ciclo a i<=3, il punteggio finale sarebbe?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q9" value="a">
+                        5
+                        </label>
+                        <label>
+                        <input type="radio" name="q9" value="b">
+                        6
+                        </label>
+                        <label>
+                        <input type="radio" name="q9" value="c">
+                        7
+                        </label>
+                        <label>
+                        <input type="radio" name="q9" value="d">
+                        3
+                        </label>
+                    </div>
+                </div>
+                <div class="quiz-question">
+                    <p>10) Perchè il ciclo for è adatto in questo programma?</p>
+
+                    <div class="quiz-options">
+                        <label>
+                        <input type="radio" name="q10" value="a">
+                        Perchè non sappiamo quante volte viene ripetuto
+                        </label>
+                        <label>
+                        <input type="radio" name="q10" value="b">
+                        Perchè vogliamo fare qualcosa finchè una condizione è vera
+                        </label>
+                        <label>
+                        <input type="radio" name="q10" value="c">
+                        Perchè sappiamo che vogliamo ripetere esattamente 5 volte
+                        </label>
+                        <label>
+                        <input type="radio" name="q10" value="d">
+                        Perchè while non funziona con le condizioni
+                        </label>
+                    </div>
+                </div>
+                <div style="position:absolute; top:99%; left: 38%">
+                    <button id="start-btn">Invia</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Popup errore -->
+    <div id="popup-error" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">❌ <strong>Oops!</strong> Ricontrolla le domande Tigre.</p>
+        <button id="retry-btn" class="popup-btn">Riprova</button>
+      </div>
+    </div>
+
+    <!-- Popup successo -->
+    <div id="popup-success" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">🎉 <strong>Bravo!</strong> Hai completato tutto correttamente.</p>
+        <button id="next-btn" class="popup-btn">Ritorna alla home</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – L'amichevole programmatore di quartiere</p>
+  </footer>
+  <script src="./js/chapter5.js"></script>
+</body>
+</html>

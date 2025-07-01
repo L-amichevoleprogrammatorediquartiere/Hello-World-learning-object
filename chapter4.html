@@ -73,23 +73,24 @@ Per esempio, in un ciclo while, se dimentichi di aggiornare la variabile che con
 🎮 Mini game
 Trascina la parola chiave giusta nello spazio mancante
 "></div>
-      <div id="loop-game" class="hidden" >
+      <div id="loop-game" style="display:none" >
 
-        <div style="position:absolute; top:0%; right:0%; width:50%; height:32.5%; border: 2px solid gray; border-top-right-radius: 10px;">
-          <div style="position: absolute; top:12%; left:3%; width:40%; height:40%; border: 2px dashed gray; border-radius: 10px;
+        <div style="position:absolute; top:0%; right:0%; width:50%; height:50%; border: 2px solid gray; border-top-right-radius: 10px;">
+          
+          <div style="position: absolute; top:12%; left:3%; width:40%; height:26%; border: 2px dashed gray; border-radius: 10px;
           font-family: 'Press Start 2P', cursive; font-size: 12px; color: gray; text-align: center; line-height: 40px">key-word</div>
-          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%; color: crimson;"> PI</p>
-          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 57%;"> = </p>
-          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 65%; color: crimson;">3.14</p>
-          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 81%;"> ; </p>
+          
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%;"> loop serve</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 35%; left: 5%; line-height:160%">  per eseguire un blocco di codice un numero di volte predeterminato.</p>
+
         </div>
-        <div style="position:absolute; top:33%; right:0%; width:50%; height:32.5%; border: 2px solid gray;">
-          <div style="position: absolute; top:12%; left:3%; width:40%; height:40%; border: 2px dashed gray; border-radius: 10px;
+        <div style="position:absolute; top:50%; right:0%; width:50%; height:50%; border: 2px solid gray; border-bottom-right-radius: 10px;">
+
+          <div style="position: absolute; top:12%; left:3%; width:40%; height:26%; border: 2px dashed gray; border-radius: 10px;
           font-family: 'Press Start 2P', cursive; font-size: 12px; color: gray; text-align: center; line-height: 40px">key-word</div>
-          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%;"> counter = </p>
-          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 83%; color: crimson;">0</p>
-          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 88%;"> ; </p>
-          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 55%; left: 8%;"> counter ++ ; </p>
+
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%;"> loop serve</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 35%; left: 5%; line-height:160%">  per eseguire un blocco di codice finché una condizione è vera.</p>
         </div>
       
       </div>
@@ -98,7 +99,7 @@ Trascina la parola chiave giusta nello spazio mancante
     <!-- Popup errore -->
     <div id="popup-error" class="popup hidden" role="alert" aria-modal="true">
       <div class="popup-content">
-        <p style="font-size: 1.5rem; margin-bottom: 1rem;">❌ <strong>Oops!</strong> Hai sbagliato ad assegnare le variabili</p>
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">❌ <strong>Oops!</strong> Hai sbagliato ad assegnare i loop.</p>
         <button id="retry-btn" class="popup-btn">Riprova</button>
       </div>
     </div>
@@ -106,7 +107,7 @@ Trascina la parola chiave giusta nello spazio mancante
     <!-- Popup successo -->
     <div id="popup-success" class="popup hidden" role="alert" aria-modal="true">
       <div class="popup-content">
-        <p style="font-size: 1.5rem; margin-bottom: 1rem;">🎉 <strong>Bravo!</strong> Variabili assegnate corretamente.</p>
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">🎉 <strong>Bravo!</strong> Loop assegnati correttamente. Vai tigre!</p>
         <button id="next-btn" class="popup-btn">Avanti</button>
       </div>
     </div>

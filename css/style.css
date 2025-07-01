@@ -190,6 +190,16 @@ footer {
     margin-left: 10%;
 }
 
+#last-game {
+    display: flex;
+    position:relative;
+    height: 2780px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #2c2c2c;
+    margin-left: 5%;
+}
+
 .popup {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -236,6 +246,57 @@ footer {
 .popup-btn:hover {
   background-color: #ffcc00;
   box-shadow: 0 0 15px #ffcc00;
+}
+
+.quiz-question {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quiz-options label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 6px 10px;
+  border: 2px solid #4c4c4c;
+  background: #1e1e1e;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  color: #0ff;
+  transition: background 0.2s;
+  user-select: none;
+}
+
+.quiz-options input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background: #000;
+  border: 2px solid #0ff;
+  position: relative;
+}
+
+.quiz-options input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  background: #0ff;
+}
+
+.quiz-options input[type="radio"]:hover {
+  box-shadow: 0 0 4px #0ff;
 }
 
 .hidden {
