@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitolo 4 – I cicli (for, while)</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="chapter-page">
+  <header>
+    <h1>Hello World</h1>
+    <p class="subtitle">Impara le basi della programmazione da zero</p>
+  </header>
+
+  <main class="chapter-page">
+    <section id="chapter1">
+        <h1>Capitolo 4 – I cicli (for, while)</h1>
+        <div id="typewriter" data-text="
+Quando programmiamo, capita spesso di voler ripetere un blocco di codice più volte, ad esempio per contare, sommare, o processare una lista di elementi. Per farlo usiamo i cicli (o loop), che eseguono ripetutamente un blocco di istruzioni finché una certa condizione è vera.
+
+In JavaScript (come in molti altri linguaggi), i cicli più comuni sono for e while.
+Differenze tra for e while
+
+
+
+Il ciclo for
+
+
+Il ciclo for è utile quando sai esattamente quante volte vuoi ripetere un'azione. La sua sintassi è compatta e contiene tutto ciò che serve per controllare il ciclo: l'inizializzazione, la condizione di continuazione e l’aggiornamento della variabile di controllo.
+
+Sintassi:
+
+for (inizializzazione; condizione; aggiornamento) {
+    // codice da eseguire ad ogni iterazione
+}
+
+&#10148; inizializzazione: si esegue una volta all'inizio, spesso si crea una variabile contatore (let i = 0).
+
+&#10148; condizione: viene controllata prima di ogni iterazione; se è falsa, il ciclo termina.
+
+&#10148; aggiornamento: si esegue alla fine di ogni iterazione, di solito serve a modificare la variabile contatore (i++).
+
+
+
+Il ciclo while
+
+
+Il ciclo while è più flessibile ed è utile quando non sai esattamente quante volte dovrai ripetere un’azione. La condizione viene controllata prima di ogni iterazione e finché è vera, il ciclo continua.
+
+Sintassi:
+
+while (condizione) {
+    // codice da eseguire finché la condizione è vera
+}
+
+La variabile di controllo va gestita all’interno del blocco o prima del ciclo.
+
+
+
+L’importanza del “criterio di uscita”
+
+
+Il criterio di uscita è la condizione che fa terminare un ciclo. È fondamentale perché senza di esso:
+
+&#10148; Il ciclo potrebbe girare all'infinito, bloccando il programma o il browser.
+
+&#10148; Potresti causare errori o blocchi difficili da risolvere.
+
+Per esempio, in un ciclo while, se dimentichi di aggiornare la variabile che controlla la condizione, la condizione resterà sempre vera:
+
+
+🎮 Mini game
+Trascina la parola chiave giusta nello spazio mancante
+"></div>
+      <div id="loop-game" class="hidden" >
+
+        <div style="position:absolute; top:0%; right:0%; width:50%; height:32.5%; border: 2px solid gray; border-top-right-radius: 10px;">
+          <div style="position: absolute; top:12%; left:3%; width:40%; height:40%; border: 2px dashed gray; border-radius: 10px;
+          font-family: 'Press Start 2P', cursive; font-size: 12px; color: gray; text-align: center; line-height: 40px">key-word</div>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%; color: crimson;"> PI</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 57%;"> = </p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 65%; color: crimson;">3.14</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 81%;"> ; </p>
+        </div>
+        <div style="position:absolute; top:33%; right:0%; width:50%; height:32.5%; border: 2px solid gray;">
+          <div style="position: absolute; top:12%; left:3%; width:40%; height:40%; border: 2px dashed gray; border-radius: 10px;
+          font-family: 'Press Start 2P', cursive; font-size: 12px; color: gray; text-align: center; line-height: 40px">key-word</div>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%;"> counter = </p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 83%; color: crimson;">0</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 88%;"> ; </p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 55%; left: 8%;"> counter ++ ; </p>
+        </div>
+      
+      </div>
+    </section>
+    
+    <!-- Popup errore -->
+    <div id="popup-error" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">❌ <strong>Oops!</strong> Hai sbagliato ad assegnare le variabili</p>
+        <button id="retry-btn" class="popup-btn">Riprova</button>
+      </div>
+    </div>
+
+    <!-- Popup successo -->
+    <div id="popup-success" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">🎉 <strong>Bravo!</strong> Variabili assegnate corretamente.</p>
+        <button id="next-btn" class="popup-btn">Avanti</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – L'amichevole programmatore di quartiere</p>
+  </footer>
+  <script src="./js/chapter4.js"></script>
+</body>
+</html>

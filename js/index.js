@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500);
 
         setTimeout(() => {
-        window.location.href = "chapter1.html";
+            window.location.href = "chapter1.html";
         }, 1000);
     });
 });

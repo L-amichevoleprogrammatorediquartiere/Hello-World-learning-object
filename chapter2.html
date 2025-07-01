@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitolo 2 – Le variabili</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="chapter-page">
+  <header>
+    <h1>Hello World</h1>
+    <p class="subtitle">Impara le basi della programmazione da zero</p>
+  </header>
+
+  <main class="chapter-page">
+    <section id="chapter1">
+        <h1>Capitolo 2 – Le variabili</h1>
+        <div id="typewriter" data-text="
+Cosa sono le variabili?
+
+
+Una variabile è un nome simbolico che rappresenta un valore che può cambiare nel tempo o durante l'esecuzione del programma. Sono fondamentali per conservare informazioni come l'età di una persona, il punteggio di un gioco o il nome di un utente.
+
+
+
+Sintassi per dichiararle e usarle in JavaScript
+
+
+In JavaScript, puoi creare una variabile usando le parole chiave let, const o var. Ecco qualche esempio:
+
+let nome = &quot;Luca&quot;;
+una variabile di tipo stringa  
+
+const eta = 25;
+una variabile costante di tipo numero  
+
+var isAttivo = true;
+una variabile booleana che può cambiare
+
+
+&#10148; let crea una variabile che può cambiare valore.
+
+&#10148; const crea una variabile che rimane costante (non cambia).
+
+&#10148; var è una sintassi più vecchia, usata meno oggi ma ancora valida.
+
+
+
+Tipi base di variabili
+
+
+&#10148; Numero: rappresenta valori numerici, come 10, 3.14, -5.
+
+&#10148; Stringa: sequenze di caratteri racchiusi tra virgolette, es: &quot;ciao&quot;, &quot;123&quot;.
+
+&#10148; Booleano: può essere solo true (vero) o false (falso), utile per decisioni e controlli.
+
+
+Con le variabili puoi costruire programmi dinamici e interattivi, capaci di reagire ai dati e cambiare comportamento in base alle informazioni memorizzate.
+
+
+🎮 Mini game
+Trascina la parola chiave giusta nello spazio mancante
+"></div>
+      <div id="variable-game" class="hidden" >
+
+        <div style="position:absolute; top:0%; right:0%; width:50%; height:32.5%; border: 2px solid gray; border-top-right-radius: 10px;">
+          <div style="position: absolute; top:12%; left:3%; width:40%; height:40%; border: 2px dashed gray; border-radius: 10px;
+          font-family: 'Press Start 2P', cursive; font-size: 12px; color: gray; text-align: center; line-height: 40px">key-word</div>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%; color: crimson;"> PI</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 57%;"> = </p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 65%; color: crimson;">3.14</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 81%;"> ; </p>
+        </div>
+        <div style="position:absolute; top:33%; right:0%; width:50%; height:32.5%; border: 2px solid gray;">
+          <div style="position: absolute; top:12%; left:3%; width:40%; height:40%; border: 2px dashed gray; border-radius: 10px;
+          font-family: 'Press Start 2P', cursive; font-size: 12px; color: gray; text-align: center; line-height: 40px">key-word</div>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%;"> counter = </p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 83%; color: crimson;">0</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 88%;"> ; </p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 55%; left: 8%;"> counter ++ ; </p>
+        </div>
+        <div style="position:absolute; top:66%; right:0%; width:50%; height:33%; border: 2px solid gray; border-bottom-right-radius: 10px;">
+          <div style="position: absolute; top:12%; left:3%; width:40%; height:40%; border: 2px dashed gray; border-radius: 10px;
+          font-family: 'Press Start 2P', cursive; font-size: 12px; color: gray; text-align: center; line-height: 40px">key-word</div>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 47%;"> nome = </p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 72%; color: greenyellow;">"Luca"</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 12%; left: 95%;"> ; </p>
+
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 55%; left: 8%;"> nome = </p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 55%; left: 33%; color: greenyellow;">"Marco"</p>
+          <p style="position: absolute; font-family: 'Press Start 2P', cursive; font-size: 12px; top: 55%; left: 60%;"> ; </p>
+        </div>
+      
+      </div>
+    </section>
+    
+    <!-- Popup errore -->
+    <div id="popup-error" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">❌ <strong>Oops!</strong> Hai sbagliato ad assegnare le variabili</p>
+        <button id="retry-btn" class="popup-btn">Riprova</button>
+      </div>
+    </div>
+
+    <!-- Popup successo -->
+    <div id="popup-success" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">🎉 <strong>Bravo!</strong> Variabili assegnate corretamente.</p>
+        <button id="next-btn" class="popup-btn">Avanti</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – L'amichevole programmatore di quartiere</p>
+  </footer>
+  <script src="./js/chapter2.js"></script>
+</body>
+</html>

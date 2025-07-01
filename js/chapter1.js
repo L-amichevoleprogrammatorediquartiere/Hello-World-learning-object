@@ -21,6 +21,7 @@ retryBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
     hidePopup(popupSuccess);
     // Qui puoi far partire il prossimo capitolo o altra azione
+    window.location.href = "chapter2.html";
 });
 
 function startAnimationSequence(sequence) {
@@ -197,6 +198,8 @@ function mescolaCaffe(callback) {
                     layer.removeChild(spoon);
                     animationRunning=false;
                     showPopup(popupSuccess);
+                    const audio= new Audio('./media/audio/success.wav');
+                    audio.play();
                     callback();
                 });
             }, { once: true });
@@ -350,6 +353,8 @@ function CoffeGame(container){
         } else {
             if (!animationRunning){
                 showPopup(popupError);
+                const audio= new Audio('./media/audio/wrong.mp3');
+                audio.play();
             }
         }
     });

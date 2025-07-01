@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitolo 3 – Le condizioni (if, else)</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="chapter-page">
+  <header>
+    <h1>Hello World</h1>
+    <p class="subtitle">Impara le basi della programmazione da zero</p>
+  </header>
+
+  <main class="chapter-page">
+    <section id="chapter1">
+        <h1>Capitolo 3 – Le condizioni (if, else)</h1>
+        <div id="typewriter" data-text="
+Quando programmiamo, spesso vogliamo prendere decisioni diverse in base a situazioni diverse. Per esempio, vogliamo dire al computer di fare una cosa se una condizione è vera, oppure un'altra cosa se è falsa. Qui entrano in gioco i rami condizionali, che permettono di controllare il flusso del programma.
+
+
+
+La logica dei rami condizionali
+
+
+La logica dietro i rami condizionali è semplice: vogliamo eseguire blocchi di codice solo se certe condizioni sono vere. Immagina una biforcazione in un sentiero:
+
+&#10148; Se la condizione è vera, prendi il sentiero A.
+
+&#10148; Se la condizione è falsa, puoi prendere il sentiero B, oppure altri sentieri a seconda di altre condizioni.
+
+Questo processo aiuta il programma a &quot;decidere&quot; cosa fare, permettendo di costruire comportamenti diversi in base ai dati o alle circostanze.
+Sintassi di if, else if, else
+
+In quasi tutti i linguaggi di programmazione (come C, Java, Python, JavaScript, ecc.), la struttura condizionale base si scrive così:
+
+
+if (condizione) {
+    // codice da eseguire se la condizione è vera
+} else if (altra_condizione) {
+    // codice da eseguire se la prima condizione è falsa e questa è vera
+} else {
+    // codice da eseguire se nessuna delle condizioni precedenti è vera
+}
+
+
+Spiegazione:
+
+&#10148; if: verifica la prima condizione. Se è vera, esegue il blocco di codice associato e salta tutto il resto.
+
+&#10148; else if: opzionale, permette di verificare condizioni aggiuntive se le precedenti sono false.
+
+&#10148; else: opzionale, è un &quot;tutto il resto&quot; — se nessuna condizione precedente è vera, viene eseguito questo blocco.
+
+
+
+Operatori di confronto
+
+
+Per scrivere condizioni efficaci, usiamo operatori di confronto, che ci permettono di confrontare valori e decidere se una relazione è vera o falsa.
+
+Ecco i più comuni:
+
+&#10148; ==	uguale a	
+&#10148; !=	diverso da	
+&#10148; <	minore di	
+&#10148; >	maggiore di	
+&#10148; <=	minore o uguale a	
+&#10148; >=	maggiore o uguale a	
+
+Questi operatori confrontano due valori e restituiscono vero (true) o falso (false).
+
+
+
+Operatori logici
+
+
+Spesso vogliamo combinare più condizioni. Per farlo usiamo operatori logici:
+
+&#10148; && (AND): la condizione è vera se entrambe le condizioni sono vere.
+
+&#10148; || (OR): la condizione è vera se almeno una delle condizioni è vera.
+
+&#10148; ! (NOT): inverte il valore di verità di una condizione.
+
+
+🎮 Mini game
+Modifica la temperatura, tenendo conto della condizione, per salvare lo snowman
+"></div>
+      <div id="snow-game" style="display:none" >
+        <div style="position:absolute; left:0%; top:70%; width:49.8%; height: 30%; background-color: #6B4E3B;
+            border: 2px solid #3A2D23; border-bottom-left-radius: 10px;"></div>
+        <div style="position:absolute; left:0%; top:39.2%; width:49.8%; height: 30%; background-color: #4A3C2A;
+    background-image: 
+        linear-gradient(45deg, #3A2D23 25%, transparent 25%),
+        linear-gradient(-45deg, #3A2D23 25%, transparent 25%);
+    background-size: 20px 20px;"></div>
+        <div style="position:absolute; left:0%; top:0%; width:49.8%; height: 39.2%; background-color: #3E5C6E;
+    background-image: 
+        linear-gradient(#2C4859 1px, transparent 1px),
+        linear-gradient(90deg, #2C4859 1px, transparent 1px);
+    background-size: 20px 20px; border-top-left-radius: 10px;"></div>
+
+        <img id="snowman" src="media/image/snow-game/snowman.png" 
+              style="position: absolute; left: 12%; top: 15%; width: 170px;">
+
+        <img src="media/image/snow-game/plus.png" 
+              style="position: absolute; left: -1%; top: 62%; width: 140px;">
+
+        <img src="media/image/snow-game/minus.png" 
+              style="position: absolute; left: 30%; top: 62%; width: 140px;">
+
+        <div id="temp" style="position:absolute; top: 79%; left:24%; font-size: 25px; color:gray">5°</div>
+
+
+        <div id="plus" style="position:absolute; top: 75%; left:4%; width:11%; height:21%;"></div>
+        <div id="minus" style="position:absolute; top: 75%; left:36%; width:11%; height:21%;"></div>
+
+
+        <div style="position:absolute; top:0%; left:50%; width: 50%; height: 100%; 
+            border-bottom-right-radius: 10px; border-top-right-radius: 10px; border: 2px solid gray">
+            <div style="position:absolute; top: 10%; left:10%; font-size: 20px; color:darkorange; user-select: none;">Condizione</div>
+            <div style="position:absolute; top: 30%; left:10%; font-size: 12px; user-select: none;">if (temperatura>5){<br><br>
+                &emsp;&emsp;&emsp;sciogli();<br><br>}<br>else{<br><br>
+                &emsp;&emsp;&emsp;sopravvive();<br><br>}
+            </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Popup errore -->
+    <div id="popup-error" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">❌ <strong>Oops!</strong> Hai fatto sciogliere lo snowman.</p>
+        <button id="retry-btn" class="popup-btn">Riprova</button>
+      </div>
+    </div>
+
+    <!-- Popup successo -->
+    <div id="popup-success" class="popup hidden" role="alert" aria-modal="true">
+      <div class="popup-content">
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">🎉 <strong>Bravo!</strong> Snowman salvato.</p>
+        <button id="next-btn" class="popup-btn">Avanti</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – L'amichevole programmatore di quartiere</p>
+  </footer>
+  <script src="./js/chapter3.js"></script>
+</body>
+</html>
