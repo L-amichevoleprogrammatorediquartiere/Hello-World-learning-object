@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="hello_world_lo_scorm" version="1.0"
+    xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+    xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 
+    imscp_rootv1p1p2.xsd
+    http://www.adlnet.org/xsd/adlcp_rootv1p2 
+    adlcp_rootv1p2.xsd">
+
+  <organizations default="org1">
+  <organization identifier="org1">
+    <title>Hello World Learning Object</title>
+
+    <item identifier="item_index" identifierref="res_index">
+      <title>Home</title>
+    </item>
+    <item identifier="item_ch1" identifierref="res_ch1">
+      <title>Capitolo 1</title>
+    </item>
+    <item identifier="item_ch2" identifierref="res_ch2">
+      <title>Capitolo 2</title>
+    </item>
+    <item identifier="item_ch3" identifierref="res_ch3">
+      <title>Capitolo 3</title>
+    </item>
+    <item identifier="item_ch4" identifierref="res_ch4">
+      <title>Capitolo 4</title>
+    </item>
+    <item identifier="item_ch5" identifierref="res_ch5">
+      <title>Capitolo 5</title>
+    </item>
+
+  </organization>
+</organizations>
+
+<resources>
+  <resource identifier="res_index" type="webcontent" adlcp:scormtype="sco" href="index.html">
+    <file href="index.html"/>
+    <file href="css/style.css"/>
+    <file href="js/chapter1.js"/>
+    <file href="js/chapter2.js"/>
+    <file href="js/chapter3.js"/>
+    <file href="js/chapter4.js"/>
+    <file href="js/chapter5.js"/>
+    <file href="metadata/metadata.xml"/>
+  </resource>
+
+  <resource identifier="res_ch1" type="webcontent" adlcp:scormtype="sco" href="chapter1.html">
+    <file href="chapter1.html"/>
+  </resource>
+  <resource identifier="res_ch2" type="webcontent" adlcp:scormtype="sco" href="chapter2.html">
+    <file href="chapter2.html"/>
+  </resource>
+  <resource identifier="res_ch3" type="webcontent" adlcp:scormtype="sco" href="chapter3.html">
+    <file href="chapter3.html"/>
+  </resource>
+  <resource identifier="res_ch4" type="webcontent" adlcp:scormtype="sco" href="chapter4.html">
+    <file href="chapter4.html"/>
+  </resource>
+  <resource identifier="res_ch5" type="webcontent" adlcp:scormtype="sco" href="chapter5.html">
+    <file href="chapter5.html"/>
+  </resource>
+</resources>
+
+</manifest>

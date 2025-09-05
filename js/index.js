@@ -1,3 +1,26 @@
+//Command for LMS platform
+//function getAPIHandle() {
+//    let win = window;
+//    while (win) {
+//        try {
+//            if (win.API) return win.API; // SCORM 1.2
+//        } catch (err) {}
+//        if (win.parent && win.parent !== win) {
+//            win = win.parent;
+//        } else {
+//            break;
+//        }
+//    }
+//    if (window.opener && window.opener.API) {
+//        return window.opener.API;
+//    }
+//    return null;
+//}
+//const api = getAPIHandle();
+//window.onload = function () {
+//    api.LMSInitialize("");
+//};
+
 document.addEventListener("DOMContentLoaded", () => {
     const typewriter = document.getElementById("typewriter");
     const fullText = typewriter.dataset.text;
@@ -46,7 +69,14 @@ document.addEventListener("DOMContentLoaded", () => {
             audio.play();
         }, 500);
 
+        //Command for LMS platform
+        //api.LMSSetValue("cmi.core.lesson_status", "completed");
+
         setTimeout(() => {
+
+            //Command for LMS platform
+            //api.LMSFinish("");
+
             window.location.href = "chapter1.html";
         }, 1000);
     });

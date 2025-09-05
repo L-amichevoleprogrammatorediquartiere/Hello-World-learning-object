@@ -1,3 +1,26 @@
+//Command for LMS platform
+//function getAPIHandle() {
+//    let win = window;
+//    while (win) {
+//        try {
+//            if (win.API) return win.API; // SCORM 1.2
+//        } catch (err) {}
+//        if (win.parent && win.parent !== win) {
+//            win = win.parent;
+//        } else {
+//            break;
+//        }
+//    }
+//    if (window.opener && window.opener.API) {
+//        return window.opener.API;
+//    }
+//    return null;
+//}
+//const api = getAPIHandle();
+//window.onload = function () {
+//    api.LMSInitialize("");
+//};
+
 let animationRunning = false;
 
 const popupError = document.getElementById("popup-error");
@@ -21,6 +44,10 @@ retryBtn.addEventListener("click", () => {
 nextBtn.addEventListener("click", () => {
     hidePopup(popupSuccess);
     // Qui puoi far partire il prossimo capitolo o altra azione
+
+    //Command for LMS platform
+    //api.LMSFinish("");
+
     window.location.href = "chapter2.html";
 });
 
@@ -198,6 +225,11 @@ function mescolaCaffe(callback) {
                     layer.removeChild(spoon);
                     animationRunning=false;
                     showPopup(popupSuccess);
+                    
+                    //Command for LMS platform
+                    //api.LMSSetValue("cmi.core.score.raw", "100");
+                    //api.LMSSetValue("cmi.core.lesson_status", "completed");
+
                     const audio= new Audio('./media/audio/success.wav');
                     audio.play();
                     callback();
@@ -353,6 +385,11 @@ function CoffeGame(container){
         } else {
             if (!animationRunning){
                 showPopup(popupError);
+
+                //Command for LMS platform
+                //api.LMSSetValue("cmi.core.score.raw", "0");
+                //api.LMSSetValue("cmi.core.lesson_status", "incomplete");
+
                 const audio= new Audio('./media/audio/wrong.mp3');
                 audio.play();
             }
