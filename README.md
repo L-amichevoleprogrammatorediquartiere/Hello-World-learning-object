@@ -70,6 +70,7 @@ Hello-World-learning-object/
 │
 ├── chapters/
 │ └── style.css
+│
 ├── js/ 
 │ ├── chapter1.js
 │ ├── chapter2.js
@@ -77,11 +78,14 @@ Hello-World-learning-object/
 │ ├── chapter4.js
 │ ├── chapter5.js
 │ └── index.js
+│
 ├── media/
 │ ├── audio/
 │ └── image/
+│
 ├── metadata/
 │ └── metadata.xml
+│
 ├── index.html
 ├── chapter1.html
 ├── chapter2.html
