@@ -34,28 +34,24 @@ e lo script toglierà i commenti rendendo quindi il codice compatibile con una p
 - Differenza tra programma e algoritmo
 - Esempio quotidiano: fare il caffè
 
----
 
 ### Capitolo 2 – Le variabili
 - Cosa sono le variabili
 - Sintassi per dichiararle e usarle (**JavaScript**)
 - Tipi base: numero, stringa, booleano
 
----
 
 ### Capitolo 3 – Le condizioni (`if`, `else`)
 - Logica dei rami condizionali
 - Sintassi `if`, `else if`, `else`
 - Operatori di confronto: `==`, `<`, `>`, `!=`, `&&`, `||`
 
----
 
 ### Capitolo 4 – I cicli (`for`, `while`)
 - Differenze tra `for` e `while`
 - Esempi base: stampa numeri, conteggi, somme
 - Importanza del criterio di uscita
 
----
 
 ### Capitolo 5 – Metti tutto insieme
 - Riepilogo: variabili + condizioni + cicli
